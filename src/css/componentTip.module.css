@@ -1,0 +1,10 @@
+.vwx_tooltip__container {
+    position: absolute;
+    bottom: 100%;
+}
+.vwx_default__color {
+    background-image: url('https://vizie-worx.kaustubhvats.in/images/vwx-default-color.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

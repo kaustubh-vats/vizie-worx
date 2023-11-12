@@ -1,0 +1,11 @@
+.vwx__main{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.vwx__main *{
+    box-sizing: border-box;
+}

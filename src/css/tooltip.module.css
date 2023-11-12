@@ -1,0 +1,134 @@
+.vwx_tooltip__container {
+    min-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: var(--primary-bg);
+    color: white;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.vwx_tooltip__container>div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.vwx_tooltip__container>div:nth-child(odd) {
+    flex: 1;
+}
+
+.vwx_tooltip__container label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.vwx_color__focus{
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+}
+
+.vwx_tooltip__input {
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--secondary-bg);
+    outline-color: var(--accent-color);
+}
+
+.vwx_tooltip__input:focus {
+    border: none;
+}
+
+.vwx_tooltip__input:focus-visible {
+    border: none;
+    outline-color: var(--accent-color);
+}
+
+.vwx_tooltip__input[type=color] {
+    height: 0px;
+    width: 0px;
+    padding: 0px;
+    background-color: transparent;
+    outline-color: transparent;
+    border: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.vwx_color__preview {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.vwx_tooltip__add {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    font-size: 1.7rem;
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
+
+.vwx_tooltip__add:focus {
+    outline-color: white;
+}
+.vwx_tooltip__rotated {
+    transform: rotate(45deg);
+}
+
+.vwx_tooltip__container input::-webkit-outer-spin-button,
+.vwx_tooltip__container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.vwx_tooltip__container input[type=number] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.vwx_tooltip__left .vwx_tooltip__input,
+.vwx_tooltip__right .vwx_tooltip__input:not(select):not(input[type=color]):not(.vwx_tooltip__max_inp) {
+    width: 60px;
+}
+.vwx_tooltip__max_inp{
+    width: 120px;
+}
+.vwx_tooltip__left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+.vwx_tooltip__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+.vwx_tooltip__right #imgsrc,
+.vwx_tooltip__right #textcontent {
+    width: 100px;
+}
+.vwx__left_inputs{
+    display: flex;
+    gap: 10px;
+}
+.vwx_tooltip__dropdown{
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+.vwx_outline_container{
+    --outline-top: 0px;
+    --outline-left: 0px;
+    --outline-display: none;
+    position: absolute;
+    top: var(--outline-top);
+    left: var(--outline-left);
+    cursor: grab;
+    display: var(--outline-display);
+}
+.vwx_outline{
+    --outline-height: 0px;
+    --outline-width: 0px;
+    position: relative;
+    height: var(--outline-height);
+    width: var(--outline-width);
+    outline: 2px solid var(--heighlight-color);
+}
+.vwx_outline_selected{
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    border-radius: 50%;
+    cursor: nw-resize;
+}
+.vwx_playground{
+    position: relative;
+}
+.vwx__groupOutline{
+    border: 2px solid blue;
+    position: absolute;
+}

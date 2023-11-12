@@ -1,0 +1,42 @@
+.vwx_popup__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-in 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+.vwx_all__components{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-bg);
+    border-radius: 0px 0px 20px 20px;
+}
+.vwx_popup_btn{
+    background-color: var(--secondary-bg);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.vwx_popup__hide{
+    animation: slide-out 1.2s ease-in-out;
+}
+@keyframes slide-out {
+    from{
+        transform: translateY(0%);
+    } to {
+        transform: translateY(-100%);
+    }
+}
+@keyframes slide-in {
+    from{
+        transform: translateY(-100%);
+    } to {
+        transform: translateY(0%);
+    }
+}
